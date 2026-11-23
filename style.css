@@ -24,91 +24,91 @@ body {
   justify-content: center;
   align-content: center;
   align-items: center;
-flex-direction: column;
+  flex-direction: column;
   min-height: 100vh;
 
   background-color: var(--color-slate-300);
   font-family: var(--font-family);
 }
-.contiane{
+.contiane {
   display: grid;
   width: 320px;
- background-color: var(--color-white);
-padding: 14px 14px 36px 14px;
- justify-content: center;
- border-radius: 15px;
- box-shadow: 0px 25px 40px rgba(0,0,0,0.1);
-   transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), 
-              background-color 0.4s ease, 
-              color 0.4s ease;
+  background-color: var(--color-white);
+  padding: 14px 14px 36px 14px;
+  justify-content: center;
+  border-radius: 15px;
+  box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+    background-color 0.4s ease,
+    color 0.4s ease;
   margin-top: auto;
   margin-bottom: auto;
   cursor: pointer;
 }
 
-.contiane:hover{
-background-color: rgb(167, 252, 252);
-transform: scale(1.1);
-
+.contiane:hover {
+  background-color: rgb(167, 252, 252);
+  transform: scale(1.1);
 }
-.attribution,p{
+.attribution,
+p {
   display: inline;
-  margin-bottom: 10px;
-  
+  text-align: center;
+  font-size: 12px;
+  padding: 0 16px 16px;
+  color: var(--color-slate-900);
 }
-a{
+a {
   text-decoration: none;
   color: blue;
 }
-.pic{
+.pic {
   max-width: 100%;
- 
+
   grid-column: 1;
   justify-self: center;
-margin-bottom: 25px;
-    border-radius: 8px;
-
- 
+  margin-bottom: 25px;
+  border-radius: 8px;
 }
-h1{
+h1 {
   color: var(--color-slate-900);
   font-size: 20px;
   text-align: center;
   margin: 10px 15px 10px 10px;
 }
-p{
+p {
   color: var(--color-slate-500);
   font-size: 15px;
   margin-bottom: 10px;
-   text-align: center;
-   
+  text-align: center;
 }
 
-@media (max-width:350px){
-  .contiane{
-    max-width: 100vw;
-    row-gap: 50px;
-    justify-self: center;
-
+@media (max-width: 374px) {
+  .contiane {
+    width: 85%;
   }
-  .pic{
+}
+  .pic {
     width: 90vw;
     margin: 0 10px 0 10px;
   }
-  h2,p,attribution{
-     width: 100vw;
-     margin: 0 10px 0 10px;
+  h2,
+  p,
+  attribution {
+    width: 100vw;
+    margin: 0 10px 0 10px;
   }
-  body{
+  body {
     width: 100vw;
   }
-  .attribution{
-text-align: center;
-width: 90%;
-padding: 5px;
+  .attribution {
+    text-align: center;
+    width: 90%;
+    padding: 5px;
   }
-  a ,p{
+  a,
+  p {
     display: block;
   }
 
-}
